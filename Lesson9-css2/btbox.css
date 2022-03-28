@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+    div#box1 {
+        width: 400px;
+        height: auto;
+        padding: 10px;
+        border: 3px solid;
+        margin:0px auto;
+        background-color: rgb(78, 78, 82);
+        color: white;
+        border-radius: 10px;  
+    
+    }
+   
+        div#box2 {
+            width: 400px;
+            height: auto;
+            padding: 10px;
+            border: 3px solid;
+            margin: 0px auto;
+            background-color: rgb(78, 78, 82);
+            color: white;
+             border-radius: 10px;  
+        
+        }
