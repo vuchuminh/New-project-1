@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    div {
+        background-color: aliceblue;
+        background-clip:padding-box;
+        width: 25%;
+        border: 1px solid;
+        float: left;
+    }
+    img {
+        width: 100%;
+    }
+    @media screen and (max-width :700px) {
+        div {
+            width: 50%;
+        }
+        
+    }
+    @media screen and (max-width :500px) {
+        div {
+            width: 100%;
+        }
+        
+    }
+    div::after {
+        display: block;
+        content: "Đây là ai ???";
+        color: blue;
+        text-align: center;
+    }
+</style>
+<body>
+    <div><img src="../Lesson9-css2/Lesson10-css/img/92367028_2658953224213652_489606514894438400_n.jpg" alt=""></div>
+    <div><img src="../Lesson9-css2/Lesson10-css/img/92367028_2658953224213652_489606514894438400_n.jpg" alt=""></div>
+    <div><img src="../Lesson9-css2/Lesson10-css/img/92367028_2658953224213652_489606514894438400_n.jpg" alt=""></div>
+    <div><img src="../Lesson9-css2/Lesson10-css/img/92367028_2658953224213652_489606514894438400_n.jpg" alt=""></div>
+</body>
+</html>
