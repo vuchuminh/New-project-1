@@ -1,0 +1,35 @@
+body {
+    background-color: orange;
+    display: flex;
+    height: 100vh;
+}
+.mobile,
+.table,
+.pc {
+    margin: auto;
+    font-size: 100px;
+    color: #fff;
+    display: none;
+}
+/* mobile width <740px */
+@media screen and (max-width :739px) {
+    .mobile {
+        display: block;
+    }
+        
+    }
+/* table width >=740 and width <1024px */
+@media screen and (min-width : 740px) and (max-width : 1023px) {
+    .table {
+        display: block;
+    }
+    
+}
+
+/* pc width >=1024 */
+@media screen and (min-width :1024px) {
+    .pc {
+        display: block;
+    }
+    
+}
