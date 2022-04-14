@@ -5,49 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
+</head>  
 <body>
-    <h1>Market Research Survey</h1>
-    <p>Please take a few moments to complete this satisfaction survey.</p>
 <form action="">
- Độ rộng Tuổi:
-    <select name="" id="">
-        <option value="range">18-24</option>
-        <option value="range">25-34</option>
-    </select>
-    <p><b>Gender Identity</b></p>
-    <table>
-        <tr>
-            <td> <input type="radio"name="Gender"></td>
-            <td>Male</td>
-        </tr>
-        <tr>
-            <td> <input type="radio"name="Gender"></td>
-            <td>Female</td>
-        </tr>
-        <tr>
-            <td> <input type="radio"name="Gender"></td>
-            <td>Nonbinary</td>
-        </tr>
-        <tr>
-            <td> <input type="radio"name="Gender"></td>
-            <td>Other</td>
-        </tr>
-        <tr>
-            <td> </td>
-            <td><input type="text"></td>
-        </tr>
-    <p><b>Which of the following products have your purchased in the last 2 months. Please check all that apply.</b></p>
-    <input type="checkbox"name="purchased"><span>Male</span><br>
-    <input type="checkbox"name="purchased"><span>Female</span><br>
-    <input type="checkbox"name="purchased"><span>Nonbinary</span><br>
-    <input type="checkbox"name="purchased"><span>Other</span><br>
+   <label for="name">Họ và tên:</label><br>
+   <input type="text" name="name" id="name"><br>
 
-    <p><label for="features"><b>What features would you like to see in the new product.</label></b></p>
-    <textarea name="features" id="features" cols="50" rows="10"></textarea><br>
-    <input type="submit" value="Gửi">
-    <input type="datetime-local">
-    <input type="week">
+   <label for="email">Email</label><br>
+   <input type="text" name="email" id="email"><br>
+   
+   <label for="phone">Số điện thoại</label><br>
+   <input type="text" name="phone" id="phone"><br>
+   <label for="">Giới tính</label><br>
+   <label><input name="gender"  type="radio" checked/> Nam</label>
+   <label><input name="gender"  type="radio" > Nữ</label>
+    
     </form>
 </body>
 </html>
