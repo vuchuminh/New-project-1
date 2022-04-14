@@ -7,26 +7,48 @@
     <title>Document</title>
 </head>
 <style>
-    
-    h1 {
+   
+    .colomn1 h1 {
         color: blue;
     }
-    th {
+    .colomn1 th {
         color: white;
         background-color: orange;
     }
-    th.red {
+    .colomn1 th.red {
         background-color: red;
     }
-    th.blue {
+    .colomn1 th.blue {
         background-color: blue;
     }
+    .colomn1 .column2 {
+        border: none;
+    }
+    .column2 th.red {
+        color: red;
+    }
+    .column2 .blue {
+        color: blue;
+    }
+    .cl-3 th {
+        padding: 17px;
+    }
+  
 </style>
 <body align="center">
     <h1>Tháng 10 - October</h1>
     <table align="center">
         
-        <tr>
+        <tr class="colomn1">
+            <th class="red">C.Nhật</th>
+            <th>T.Hai</th>
+            <th>T.Ba</th>
+            <th>T.Tư</th>
+            <th>T.Năm</th>
+            <th>T.Sáu</th>
+            <th class="blue">T.Bảy</th>
+        </tr>
+        <tr class="column2">
             <th class="red">C.Nhật</th>
             <th>T.Hai</th>
             <th>T.Ba</th>
@@ -36,5 +58,18 @@
             <th class="blue">T.Bảy</th>
         </tr>
     </table>
+    <table align="center">
+        <tr class="cl-3">
+            
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>1 <sub>13</sub></th>
+            <th>2 <sub>14</sub></th>
+            <th>3 <sub>15</sub></th>
+        </tr>
+    </table>
+  
 </body>
 </html>
