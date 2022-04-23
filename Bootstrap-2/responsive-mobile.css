@@ -3,7 +3,7 @@
         padding-left: 1rem !important;
     }
 
-}
+
 .section-1 .row .col-md-6 .panel {
     position: initial;
     width: initial;
@@ -39,6 +39,7 @@
 }
 footer .row .col-md-2 {
     margin-top: 8vmin;
+}
 }
 @media only screen and (max-width: 375px) { 
     .section-4 .card {
