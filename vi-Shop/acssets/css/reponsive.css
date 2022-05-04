@@ -1,0 +1,48 @@
+/* mobile */
+@media screen and (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    
+}
+/* mobile & tablet */
+@media screen and (max-width: 1023px) {
+    .navbar {
+        height: 0;
+    }
+    .header {
+        height: 62px;
+    }
+    .header-with-search {
+        height: 60px;
+    }
+    .header__logo img {
+        width: 63px;
+        margin-left: 35px;
+        margin-top: 8px;
+    }
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+    .header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+    }
+    
+    .container {
+        margin-top: 62px;
+    }
+}
+/* tablet */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+    .header__cart {
+        width: 80px;
+        text-align: center;
+    }
+}
