@@ -1,3 +1,6 @@
+.main {
+    overflow: hidden;
+}
 .header {
     height: 120px;
     background-color: rgba(251  , 101, 52, 1);
@@ -126,8 +129,54 @@
    
     
 }
+/* header-sort */
+.header__sort-bar {
+    position: fixed;
+    top:62px;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: var(--white-color);
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    display: none;
+}
 
-
+.header__sort-item {
+    flex: 1;
+}
+.header__sort-item:first-child .header__sort-link::after {
+    display: none;
+}
+.header__sort-link:focus {
+    border-bottom: 1px solid var(--primary);
+}
+.header__sort-link {
+    text-decoration: none;
+    color: var(--color);
+    font-size: 1.4rem;
+    display: block;
+    height: 100%;
+    line-height: 46px;
+    text-align: center;
+    position: relative;
+  
+}
+.header__sort-active.header__sort-link {
+    color: var(--primary);
+}
+.header__sort-link::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 60%;
+    border-left: 1px solid #e5e5e5;
+    transform: translateY(-50%);
+}
 @keyframes header__noti {
     from {
         opacity: 0;
@@ -235,6 +284,7 @@
 }
 .modal__inner {
     padding: 0 32px;
+    background-color: var(--white-color);
 }
 
 .auth-form__header {
@@ -565,9 +615,7 @@
 .container {
     background-color: #F5F5F5;
 }
-.container-content {
-    padding-top: 36px;
-}
+
 .category {
     border-radius: 2px;
     background-color: var(--white-color);
@@ -732,7 +780,11 @@
 .price {
     display: flex;
     align-items: baseline;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
+
 .price-old {
     margin-left: 10px;
     font-size: 1.4rem;
@@ -866,6 +918,10 @@
 }
 .product__pagination {
     margin: 48px 0 32px 0;
+    padding-left: 0;
+}
+.text-and {
+    text-align: center;
 }
 /* footer */
 .footer {
@@ -920,3 +976,6 @@
     font-size: 1.4rem;
     color: var(--color);
 }
+/* .product-item__like:not(:root) {
+    overflow: hidden;
+} */

@@ -14,7 +14,24 @@
 </head>
 <body>
     <div class="main">
+
         <header class="header">
+            <!-- menu -->
+            <a ><i class="fa-solid fa-bars menu-btn"></i></a>   
+        <div class="menu js-menu">
+            <div class="nav-bar">
+                <ul class="bar">
+                    <a ><i class="fa-regular fa-rectangle-xmark close-btn"></i></a>
+                    
+                <li><a href="#"><button class="nav-bar-link">Home</button></a></li>
+                <li><button  class="dangky-btn-js nav-bar-link">Đăng ký</button></li>
+                <li><button class="dangnhap-btn-js nav-bar-link">Đăng nhập</button></li>
+                <li><button class="nav-bar-link">Đăng xuất</button></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+            <!-- end menu -->
             <div class="grid wide">
                 <nav class="navbar  hide-on-mobile-tablet">
                     <ul class="navbar-list">
@@ -122,7 +139,7 @@
                                 </ul>
                             </div>
                         </div>
-                      <div class="header__search-selection">
+                      <div class="header__search-selection hide-on-mobile ">
                           <span class="selection-label">Trong shop</span>
                           <i class="fa-solid fa-angle-down"></i>  
                           <ul class="selection-option">
@@ -154,11 +171,30 @@
                     </div>
                 </div>
             </div>
+            <ul class="header__sort-bar">
+          <li class="header__sort-item">
+              <a href="" class="header__sort-link">Phổ biến</a>
+                     </li>
+        <li class="header__sort-item">
+                <a href="" class="header__sort-link header__sort-active">Mới nhất</a>
+                     </li>
+               
+        <li class="header__sort-item">
+            <a href="" class="header__sort-link">Bán chạy</a>
+                    </li>
+               
+         <li class="header__sort-item">
+                <a href="" class="header__sort-link">Giá</a>
+           
+                    </li>
+               
+          
+            </ul>
         </header>
         <div class="container">
             <div class="grid wide">
-                <div class="grid__row container-content">
-                    <div class="grid__column-2">
+                <div class="row container-content">
+                    <div class="col l-2 m-0 c-0">
                         <nav class="category">
                             <h3>
                                 <i class="fa-solid fa-list"></i>
@@ -171,7 +207,7 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="grid__column-10">
+                    <div class="col l-10 m-12 c-12">
                         <div class="home  hide-on-mobile-tablet">
                             <span class="home__label">Sắp xếp theo</span>
                             <button class=" home__label-btn btn">Phổ biến</button>
@@ -208,9 +244,9 @@
                         <div class="home-product">
                          
   
-                            <div class="grid__row">
-                                <div class="grid__column-2-4">
-                                    <a class="home-product-item" >
+                            <div class="row">
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="" >
                                         <div class="home-product-item__img" style="background-image: url(acssets/img/vesa.jfif);" >
                                         </div>
                                         <h4 class="product-item__name">Nước Hoa Nam Versace Pour Homme 100ml</h4>
@@ -244,7 +280,7 @@
                                         </div>
                                     </a>  
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(acssets/img/vesa.jfif);" >
                                         </div>
@@ -281,7 +317,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(acssets/img/vesa.jfif);" >
                                         </div>
@@ -318,7 +354,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(acssets/img/vesa.jfif);" >
                                         </div>
@@ -355,7 +391,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(acssets/img/vesa.jfif);" >
                                         </div>
@@ -392,7 +428,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(acssets/img/vesa.jfif);" >
                                         </div>
@@ -429,7 +465,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(acssets/img/vesa.jfif);" >
                                         </div>
@@ -466,7 +502,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(acssets/img/vesa.jfif);" >
                                         </div>
@@ -503,7 +539,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(acssets/img/vesa.jfif);" >
                                         </div>
@@ -540,7 +576,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(acssets/img/vesa.jfif);" >
                                         </div>
@@ -577,7 +613,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(acssets/img/vesa.jfif);" >
                                         </div>
@@ -614,7 +650,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(acssets/img/vesa.jfif);" >
                                         </div>
@@ -651,7 +687,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(acssets/img/vesa.jfif);" >
                                         </div>
@@ -688,7 +724,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(acssets/img/vesa.jfif);" >
                                         </div>
@@ -725,7 +761,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(acssets/img/vesa.jfif);" >
                                         </div>
@@ -762,7 +798,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(acssets/img/vesa.jfif);" >
                                         </div>
@@ -799,7 +835,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(acssets/img/vesa.jfif);" >
                                         </div>
@@ -836,7 +872,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(acssets/img/vesa.jfif);" >
                                         </div>
@@ -873,7 +909,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(acssets/img/vesa.jfif);" >
                                         </div>
@@ -910,44 +946,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
-                                    <a class="home-product-item" href="">
-                                        <div class="home-product-item__img" style="background-image: url(acssets/img/vesa.jfif);" >
-                                        </div>
-                                        <h4 class="product-item__name">Nước Hoa Nam Versace Pour Homme 100ml</h4>
-                                        <div class="price">
-                                            <span class="price-old">2.000.000đ</span>
-                                            <span class="price-curent">1.000.000đ</span>
-                                        </div>
-                                        <div class633333333333333
-                                        +="product-item__action">
-                                            <span class="product-item__like product-item__like--liked">
-                                                <i class=" like-icon-empty far fa-heart"></i>
-                                                <i class=" like-icon-fill fas fa-heart"></i>
-                                            </span>
-                                            <div class="product-item_star">
-                                                <i class="star-gold fa-solid fa-star"></i>
-                                                <i class="star-gold fa-solid fa-star"></i>
-                                                <i class="star-gold fa-solid fa-star"></i>
-                                                <i class="star-gold fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-
-                                            </div>
-                                            <span class="product-item-sold"> 99 đã bán </span>
-                                        </div>
-                                        <div class="product-item__origin">
-                                                <span class="item__origin-name">Hà nội</span>
-                                        </div>
-                                        <div class="product-item__favourite">
-                                            <i class="fa-solid fa-check"></i>
-                                            <span>Yêu thích</span> 
-                                        </div>
-                                        <div class="product-item__sale">
-                                            <span>50%</span>
-                                            <span>GIẢM</span>
-                                        </div>
-                                    </a>
-                                </div>
+                               
                             </div>
                         </div>
                         <ul class="pagination product__pagination">
@@ -984,9 +983,9 @@
             </div>
         </div>
         <footer class="footer">
-            <div class="grid wide">
-                <div class="grid__row">
-                    <div class="grid__column-2-4">
+            <div class="grid wide footer__content">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3>Chăm sóc khách hàng</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -1000,7 +999,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3>Về Vi-Shop</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -1014,7 +1013,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3>Danh mục</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -1028,7 +1027,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">  
+                    <div class="col l-2-4 m-4 c-6">  
                         <h3>Theo dõi trên chúng tôi</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -1051,7 +1050,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-8 c-12">
                         <h3>Vào cửa hàng trên ứng dụng</h3>
                         <div class="footer__download">
                             <img src="acssets/img/d91264e165ed6facc6178994d5afae79.png" alt="download qr" class="footer__download-qr">
@@ -1071,26 +1070,26 @@
             <div class="footer__bottom">
                 <div class="grid wide">
 
-                    <div class="grid__row row1">
+                    <div class="row row1">
                         
-                            <div class="grid__column-3">                       
+                            <div class="col l-3 m-6 c-6">                       
                                <h3>CHÍNH SÁCH BẢO MẬT</h3>
                            </div>
-                           <div class="grid__column-3">
+                           <div class="col l-3 m-6 c-6">
                                <h3>QUY CHẾ HOẠT ĐỘNG</h3>
                            </div>
-                           <div class="grid__column-3">
+                           <div class="col l-3 m-6 c-6">
                                <h3>CHÍNH SÁCH VẬN CHUYỂN</h3>
                            </div>
-                           <div class="grid__column-3">
+                           <div class="col l-3 m-6 c-6">
                                <h3>CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN</h3>
                            
     
                             </div>
                        
-                            <p>Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày 10/02/2015</p><br>
+                            <p class="col c-6 text-and">Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày 10/02/2015</p><br>
                         </div>
-                        <div class="grid__row row2">
+                        <div class="row row2">
                         <p>© 2015 - Bản quyền thuộc về Công ty TNHH Vi-Shop</p>       
     
                     </div>
@@ -1194,6 +1193,8 @@
     </div>
     <script>
         const DangkyBtn = document.querySelector('.js-dangky-btn')
+        const DangkymenuBtn = document.querySelector('.dangky-btn-js')
+        const Dangnhapmenubtn = document.querySelector('.dangnhap-btn-js')
         const modal = document.querySelector('.moda-js')
         const close = document.querySelector('.back-js')
         const close1 = document.querySelector('.back-btn-js')
@@ -1203,10 +1204,14 @@
         const closeoverlay = document.querySelector('.overlay-js')
         const modatop = document.querySelector('.moda-top-js')
         const modatop1 = document.querySelector('.moda-top-js1')
+        const like = document.querySelector('.product-item__like')
         likebtn.addEventListener('click',function() {
             this.classList.toggle('red')
         })
         DangkyBtn.addEventListener('click',function() {
+            modal.classList.add('open')
+        })
+        DangkymenuBtn.addEventListener('click',function(){
             modal.classList.add('open')
         })
         close.addEventListener('click',function() {
@@ -1221,6 +1226,9 @@
         dangnhapBtn.addEventListener('click',function() {
             Login.classList.add('open1')
         })
+        Dangnhapmenubtn.addEventListener('click',function() {
+            Login.classList.add('open1')
+        })
         close1.addEventListener('click',function() {
             Login.classList.remove('open1')
         })
@@ -1230,11 +1238,22 @@
         modatop.addEventListener('click',function(event) {
             event.stopPropagation()
         })
-       
+      
     
     </script>
-    <script>
-    
+   
+     <script>
+        const menubar = document.querySelector('.menu-btn')
+        const menu = document.querySelector('.nav-bar')
+        const close2 = document.querySelector('.close-btn')
+        
+        menubar.addEventListener ('click',function() {
+            menu.classList.add('open')
+        })
+        close2.addEventListener('click',function(){
+            menu.classList.remove('open')
+        })     
     </script>
+  
 </body>
 </html>
