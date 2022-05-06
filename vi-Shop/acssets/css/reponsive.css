@@ -15,6 +15,12 @@
     .auth-form {
         width: 395px;
     }
+    .header__search-input {
+        width: auto;
+    }
+    .modal__inner {
+        padding: 6px;
+    }
 }
 @media screen and (min-width: 375px) and (max-width: 414px) {
     .form__inputgruop .form__input {
@@ -26,7 +32,12 @@
     .auth-form {
         width: 395px;
     }
-
+    .header__search-input {
+        width: auto;
+    }
+    .modal__inner {
+        padding: 4px;
+    }
 }
 /* mobile & tablet */
 @media screen and (max-width: 1023px) {
@@ -74,10 +85,7 @@
         width: 80px;
         text-align: center;
     }
-    .modal__body, .modal__body1 {
-        margin: 111px 200px 520px;
-       
-    }
+    
     
 }
 @media screen and (min-width: 1024px) {

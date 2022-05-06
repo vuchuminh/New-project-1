@@ -259,6 +259,7 @@
 .modal2.open1 {
     display: flex;
 }
+
 .overlay ,.overlay1 {
     position: absolute;
     width: 100%;
@@ -976,6 +977,13 @@
     font-size: 1.4rem;
     color: var(--color);
 }
-/* .product-item__like:not(:root) {
-    overflow: hidden;
-} */
+/* heart */
+.column {
+    position: relative;
+}
+.product-item__like {
+    position: absolute;
+    top: 90%;
+    padding-left: 10px;
+    
+}
