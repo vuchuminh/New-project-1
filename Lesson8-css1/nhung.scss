@@ -1,0 +1,35 @@
+@mixin blue {
+    text-shadow: blue 2px -1px 3px, blue -2px 1px 2px;
+    color: white;
+    line-height:0.5cm;
+}
+@mixin  red {
+    text-shadow: red 2px -1px 3px, red -2px 1px 2px;
+    color: white;
+    line-height:0.5cm;
+}
+p.xanh{
+    @include blue();
+   }
+   p.đỏ{
+   @include red();
+   }
+   p.xanh-c{
+        @include blue();
+        text-indent:50%;
+        
+   }
+   p.đỏ-c {
+        @include red();
+        text-indent:50%;      
+   }
+   body{
+       text-indent: 45%;
+       font-size: large;
+       font-style: italic;
+       background-image:url(https://laodongthudo.vn/stores/news_dataimages/baothoa/072020/23/14/4900_Dem-trang-700.jpg?rt=20200723144901);
+       background-position: 100%;
+       background-size: cover;
+      
+   }    
+ 
