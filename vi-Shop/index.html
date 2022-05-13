@@ -162,7 +162,7 @@
                     <div class="header__cart">
                         <div class="header__cart-wrap">
                             <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
-                            <!-- <span class="header__cart-notice">3</span> -->
+                            <span class="header__cart-notice">0</span>
                             <!-- no cart list-no-cart -->
                             <div class="header__cart-list list-no-cart " >
                                 <img class="cart-list-img" src="acssets/img/no-cart (1).png" alt="">
@@ -202,13 +202,79 @@
                                 Danh mục
                             </h3>
                             <ul class="category-list">
-                                <li class="category-item category-item--active"><a href="" class="category-item-link">Nước hoa nam</a></li>
-                                <li class="category-item"><a href="" class="category-item-link">Nước hoa nữ</a></li>
+                                <li class="category-item category-item--active"><a href="" class="category-item-link">Nước hoa nam cao cấp</a></li>
+                                <li class="category-item"><a href="" class="category-item-link">Nước hoa nữ cao cấp</a></li>
+                                <li class="category-item"><a href="" class="category-item-link">Nước hoa nữ quyến rũ</a></li>
+                                <li class="category-item"><a href="" class="category-item-link">Nước hoa trung tính</a></li>
+                                <li class="category-item"><a href="" class="category-item-link">Nước hoa Chanel nữ</a></li>
                                 <li class="category-item"><a href="" class="category-item-link">Nước hoa trung tính</a></li>
                             </ul>
                         </nav>
+                      <div class="sale-image">
+                          <img src="https://demoda.vn/wp-content/uploads/2022/02/anh-sale-banner-sale-mau-do-cam-dep-600x600.jpg" alt="" class="sale-image-off">
+                          <img src="https://fedudesign.vn/wp-content/uploads/2020/07/vi-tri-dat-banner.jpg" alt="" class="sale-image-off">
+                          <img src="https://image.bnews.vn/MediaUpload/Org/2015/12/03/5988636598-1448514336.jpg" alt="" class="sale-image-off">
+                          <img src="https://dealngon24h.com/wp-content/uploads/2021/03/lich-cac-dot-sale-cua-shopee-tet-nguyen-dan.jpg" alt="" class="sale-image-off">
+                          <img src="https://vietadv.vn/wp-content/uploads/2019/09/3-6.jpg" alt="" class="sale-image-off">
+                          <img src="https://www.tiendauroi.com/wp-content/uploads/2020/04/94766920_2775149986049863_7194076130674999296_o.jpg" alt="" class="sale-image-off">
+                      </div>
                     </div>
+                    
                     <div class="col l-10 m-12 c-12">
+                        <div class="row">
+                        <div class="col l-5 m-0 c-0">
+                            <div class="lider__header">
+                                <div class="lider__header-box">
+                                   <img src="acssets/img/chloe.jfif" alt="" class="feature">
+                                   <div class="control prev"><i class="fa-solid fa-arrow-left"></i></div>
+                                   <div class="control next"><i class="fa-solid fa-arrow-right"></i></div>
+                                </div>
+                                <div class="list-img">
+                                    <div>
+                                        <img src="acssets/img/chloe.jfif" alt="">
+                                    </div>
+                                    <div>
+                                         <img  src="acssets/img/coco.jfif" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="acssets/img/david.jfif" alt="">
+                                    </div>
+                                    <div>
+                                         <img src="acssets/img/cocochanel.jfif" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="acssets/img/chanel.jfif" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="acssets/img/aven.jfif" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="acssets/img/cooc.jfif" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="acssets/img/mi.jfif" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="acssets/img/sexymen.jfif" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="acssets/img/si.jfif" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="acssets/img/lanu.jfif" alt="">
+                                    </div>
+                                   
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-7 m-0 c-0">
+                            <div class="sale-off">
+                                <img src="acssets/img/quangcao.jfif" alt="">
+                            </div>
+                        </div>
+
+                        </div>
                         <div class="home  hide-on-mobile-tablet">
                             <span class="home__label">Sắp xếp theo</span>
                             <button class=" home__label-btn btn">Phổ biến</button>
@@ -285,7 +351,7 @@
                                     </a>
                                 </div>
                                 <div class="col l-2-4 m-4 c-6 column">
-                                    <a class="home-product-item product-js" href="product2.html" >
+                                    <a class="home-product-item product-js" href="product2.html" target="_blank">
                                         <div class="home-product-item__img" style="background-image: url(acssets/img/cocochanel.jfif);" >
                                         </div>
                                         <h4 class="product-item__name">Nước hoa coco chanel, nước hoa nam, nước hoa nữ 100ml dạng xịt thơm, xịt body, gabrielle chanel,co co chanel</h4>
@@ -1196,6 +1262,64 @@
             menu.classList.remove('open')
         })     
     </script>
+    <!-- js slider -->
+    <script>
+        var imgFeature = document.querySelector('.feature')
+        var listImg = document.querySelectorAll('.list-img img')
+        var prevBtn = document.querySelector('.prev')
+        var nextBtn = document.querySelector('.next')
+        var currentIndex = 0;
+        function updateimg(index){
+            document.querySelectorAll('.list-img div').forEach(item=>{
+                item.classList.remove('active')
+            })
+            currentIndex = index
+            imgFeature.src = listImg[index].getAttribute('src')
+            listImg[index].parentElement.classList.add('active')
+        }
+        listImg.forEach((imgElement, index)=>{
+            imgElement.addEventListener('click',e=>{
+                imgFeature.style.opacity = '0'
+                setTimeout(()=>{
+                    updateimg(index)
+                    imgFeature.style.opacity = '1'
+                },400)
+               
+            })
+        })
+        prevBtn.addEventListener('click',e=>{
+            if (currentIndex == 0){
+                currentIndex = listImg.length -1
+
+            }else{
+                currentIndex--
+            }
+                imgFeature.style.animation = ''
+                setTimeout (()=>{
+                updateimg(currentIndex)
+                imgFeature.style.animation = 'sliderleft 1s ease-in-out forwards'
+            },200)
+            
+        })
+        nextBtn.addEventListener('click',e=>{
+            if (currentIndex == listImg.length -1){
+                currentIndex = 0
+                
+
+            }else{
+                currentIndex++
+                
+            }
+                imgFeature.style.animation = ''
+                setTimeout (()=>{
+                updateimg(currentIndex)
+                imgFeature.style.animation = ' sliderright 1s ease-in-out forwards'
+                
+            },200)
+            
+            
+        })
   
+    </script>
 </body>
 </html>
