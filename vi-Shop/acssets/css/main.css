@@ -1000,6 +1000,8 @@
 }
 .product__info {
     position: relative;
+    background-color: var(--white-color);
+    padding: 16px 40px;
 
 }
 .rank {

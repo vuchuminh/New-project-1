@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@100&display=swap');
+html {
+    font-family:Arial, Helvetica, sans-serif;
+}
+.image {
+   /* margin: auto; */
+    width: 50%;
+    
+    
+    
+}
+.container-img {
+    margin-left: 25%;
+    padding-top: -10px;
+}
+
+
+
+.LABEL  {
+    text-align: center;
+    color: white;
+    background-color:#ff7f26;
+}
+.right ,.left {
+    padding: 20px;
+}
+.left {
+   margin-left: 2px;
+}
+.right ,.left  {
+    /* margin: auto; */
+    color: white;
+    background-color: #ff7f26;
+    justify-content: center;
+}
+a {
+    
+    color: white;
+}
+.icon {
+    width: 50px;
+    height: 50px;
+    color: rgb(232, 108, 55);
+    background-color:rgb(232, 108, 55) ;
+}
